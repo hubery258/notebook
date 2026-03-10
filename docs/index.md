@@ -6,8 +6,9 @@
 
 > 人生忽如寄，寿无金石固。<br>
 
-hello!这里是Hubery的*落梦地*。我是浙江大学的大一计算机专业学，并不是刻板印象里那种极度理性的cser，我不仅追求技术进步，也同样喜欢文学，喜欢记录生活中美好的瞬间。因此这个blog不仅会关于技术，更有文学向的内容，或是各种生活总结。<br>
-学习CS像是带着我来到一片自由之地，在这里我可以以我自己的方式建造任何东西，无拘无束地表达自己。所以我把这个blog命名为**落梦地**，即是我的梦想与梦境栖息之地。欢迎你一起与我共享这一份梦。
+hello!这里是Hubery的**notebook**。我是浙江大学的大一计算机专业学生，并不是刻板印象里那种极度理性的cser，我不仅追求技术进步，也同样喜欢文学，喜欢记录生活中美好的瞬间。因此这个notebook不仅会关于技术，更有文学向,音乐向的内容。<br>
+学习CS像是带着我来到一片自由之地，在这里我可以以我自己的方式建造任何东西，无拘无束地表达自己。所以我把这个notebook命名为**落梦地**，即是我的梦想与梦境栖息之地。欢迎你一起与我共享这一份梦，友链请联系我！！<br>
+如果你想看到更碎片化更生活化的片段，欢迎来我的[blog](https://hubery258.github.io/)逛逛。
 
 - 🔭 最近主要在学习*CS61A*,*Coursera: Machine Learning*以及*cs50:AI*,顺便看MIT Calculus Course踏实地学微积分。
 - 主要爱好:
@@ -17,6 +18,7 @@ hello!这里是Hubery的*落梦地*。我是浙江大学的大一计算机专业
     - 🎵 **音乐**：我在努力学乐理以及音乐制作，希望能写出自己的第一首歌乃至第一张专辑！！我最喜欢的歌手是鹤The Crane以及Daniel Caesar.[我最喜欢的十张专辑](https://www.douban.com/doulist/157347519/)
 
 # Contact Me:
+[生活化blog](https://hubery258.github.io/)
 [知乎](https://www.zhihu.com/people/hubery-62-3 "有时回答一些问题") <br>
 [bilibili](https://space.bilibili.com/2134294131/favlist?fid=2880045931) <br>
 [github](https://github.com/hubery258)<br>
@@ -26,7 +28,7 @@ email: [hubery8065@hotmail.com](mailto:hubery8065@hotmail.com)
 公众号： “没有时间感的盆栽”
 
 !!! info inline end "上次更新"
-    2026/3/2
+    2026/3/10
 
 ??? note "blog的更新预告"
-    增加wechat的social选项，补充文章显示发布时间，增加评论区,以及把闲言碎语的随笔blog清除一些内容（这个部分再考虑一下。。。现在这么写随笔有点不安desuwa），换到blog界面，剩下的原blog挡放到hobbies挡，blog就流畅地记录网站更新以及。后面考虑加友链,完整写写目前mkdocs配置的笔记。
+    增加wechat的social选项，补充文章显示发布时间，增加评论区，把目前这个blog改成notebook，再单独去做一个blog，notebook上一些太文艺化的部分就搬运一下。现在这么写随笔有点不安desuwa），换到blog界面，剩下的原blog挡放到hobbies挡，blog就流畅地记录网站更新以及。后面考虑加友链,完整写写目前mkdocs配置的笔记。

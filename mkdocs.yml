@@ -81,6 +81,8 @@ nav:
     - CS50X: cs/CS50X.md
     - Computer Science Crash Course: cs/cs速成.md
     - mkdocs配置: cs/mkdocs.md
+    - markdown笔记: cs/md.md
+    - jekyll配置: cs/jekyll.md
     - Missing Semester:
       - git: cs/Missing Semester/git.md
       - lec1 SHELL: cs/Missing Semester/lec1.md
@@ -98,10 +100,7 @@ nav:
     - 大一课程总结: school/zju.md
   - project:
     - Simple Tasker: project/simpletasker.md
-  - blog:
-    - 碎语: 
-      - 25: life/pieces/25.md
-      - 26: life/pieces/26.md
+  - 文艺向:
     - Reading: 
       - 一次讲座: life/reading/好趣味与坏艺术讲座.md
       - 当尼采哭泣: life/reading/nicai.md

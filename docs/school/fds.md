@@ -56,4 +56,10 @@
     - (b) T1(M) * T2(N) =O( f(N)*g(N) ).
         - for循环里常见
 2. If T(N) is a *polynomial*(多项式) of degree k(*k次多项式*) , then T(N) = Θ(N^k).
-3.  logk N= O(N) for any constant k. 对大规模N，对数函数比线性函数小得多。
+3. logk N= O(N) for any constant k. 对大规模N，任何对数函数的幂次，增长速度都永远慢于线性函数. 
+4. 在计算O时每一步考虑worst case,for语句次数按最大的算
+
+!!! note "主定理"
+    
+- hw: Balloon Popping, 滑动窗口法O(N)优于暴力计算O(N^2),关键是求取一个区间问题，以及维护左边界与右边界，排序 + 连续区间 + 单调性。(等着写一篇blog)
+
