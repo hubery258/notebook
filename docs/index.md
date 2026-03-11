@@ -31,4 +31,8 @@ email: [hubery8065@hotmail.com](mailto:hubery8065@hotmail.com)
     2026/3/10
 
 ??? note "blog的更新预告"
-    增加wechat的social选项，补充文章显示发布时间，增加评论区，把目前这个blog改成notebook，再单独去做一个blog，notebook上一些太文艺化的部分就搬运一下。现在这么写随笔有点不安desuwa），换到blog界面，剩下的原blog挡放到hobbies挡，blog就流畅地记录网站更新以及。后面考虑加友链,完整写写目前mkdocs配置的笔记。
+    - 增加wechat的social选项，补充文章显示发布时间，增加评论区
+    - 把目前这个blog改成notebook，再单独去做一个blog，notebook上一些太文艺化的部分就搬运一下。现在这么写随笔有点不安desuwa），换到blog界面，剩下的原blog挡放到hobbies挡，blog就流畅地记录网站更新以及。
+    - 后面考虑加友链
+    - 完整写写目前mkdocs配置的笔记
+    - 配置数学公式插件
