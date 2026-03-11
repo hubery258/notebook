@@ -72,6 +72,10 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.arithmatex
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 repo_url: https://github.com/hubery258/dreamland-hubery
 repo_name: dreamland-hubery
@@ -96,7 +100,8 @@ nav:
       - 函数及其抽象: cs/cs61a/function.md
       - 数据及其抽象: cs/cs61a/data.md
   - ZJU:
-    - fds笔记: school/fds.md
+    - 数据结构基础 | fds: school/fds.md
+    - 数字逻辑设计: school/digital.md
     - 大一课程总结: school/zju.md
   - project:
     - Simple Tasker: project/simpletasker.md
