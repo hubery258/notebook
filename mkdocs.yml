@@ -68,6 +68,10 @@ extra:
       link: https://github.com/hubery258
       name: github
 
+extra_css:
+  - css/friends.css
+
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -81,6 +85,7 @@ repo_url: https://github.com/hubery258/dreamland-hubery
 repo_name: dreamland-hubery
 
 nav:
+  - Home: index.md
   - CS:
     - CS50X: cs/CS50X.md
     - Computer Science Crash Course: cs/cs速成.md
@@ -123,3 +128,4 @@ nav:
     - 思想笔记:
       - 自律: life\note\focus.md
     - 千问集: life/question.md
+  - 朋友们: friends.md
