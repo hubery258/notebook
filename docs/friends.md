@@ -7,7 +7,7 @@
     Name: Hubery's notebook
     Avatar:https://s41.ax1x.com/2026/03/14/peEfnTx.jpg
     Link: https://hubery258.github.io/dreamland-hubery/
-    Desc：C'est la vie
+    Desc：人生忽如寄，寿无金石固。
     Email: ramenboy233@gmail.com
     ```
 
