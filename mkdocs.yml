@@ -32,20 +32,19 @@ theme:
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
     # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
-    - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    # - navigation.sections 
+    # - navigation.expand
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - navigation.footer #页脚将呈现在边栏中，但在移动设备上保持原样
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - search.share #搜索分享按钮
-    - navigation.expand # 打开Tab时左侧目录全部展开
     - navigation.indexes #启用节索引页后，可以将文档直接附加到节
     - content.tabs.link
     - content.tooltips
     - content.code.copy #代码复制
-    - content.action.edit
-    - content.action.view
     - content.code.annotate
+
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/git-alt #右上角图标
@@ -89,10 +88,11 @@ nav:
   - CS:
     - CS50X: cs/CS50X.md
     - Computer Science Crash Course: cs/cs速成.md
-    - mkdocs配置: cs/mkdocs.md
     - markdown笔记: cs/md.md
-    - jekyll配置: cs/jekyll.md
-    - Missing Semester:
+    - blog配置相关:
+      - mkdocs配置: cs/mkdocs.md
+      - jekyll配置: cs/jekyll.md
+    - Missing Semester: 
       - git: cs/Missing Semester/git.md
       - lec1 SHELL: cs/Missing Semester/lec1.md
       - lec2 SHELL脚本: cs/Missing Semester/lec2.md 
@@ -105,7 +105,10 @@ nav:
       - 函数及其抽象: cs/cs61a/function.md
       - 数据及其抽象: cs/cs61a/data.md
   - ZJU:
-    - 数据结构基础 | fds: school/fds.md
+    - 数据结构基础 | fds: 
+      - chapter 2 Algorithm analysis: school/fds/chap2.md
+      - chapter 3 List,Stacks,Queues: school/fds/chap3.md
+      - chapter 4 Trees: school/fds/chap4.md
     - 数字逻辑设计: school/digital.md
     - 大一课程总结: school/zju.md
   - project:
@@ -121,11 +124,14 @@ nav:
       - 罪与罚: life/reading/crime.md
       - 福格行为模型: life/reading/action.md
       - 花束般的恋爱: life/reading/flower_love.md
+      - 绝叫: life/reading/shoutout.md
     - Music:
       - 乐理笔记: life/music/theory.md
       - 创作笔记: life/music/rhyme.md
       - 26年: life/music/26_1.md
-    - 思想笔记:
+    - 无用之用:
+      - 工作模型: life/note/workflow.md
       - 自律: life\note\focus.md
+      - 花: life/note/flower.md
     - 千问集: life/question.md
   - 朋友们: friends.md

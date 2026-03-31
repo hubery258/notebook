@@ -1,1 +1,0 @@
-# About bad art

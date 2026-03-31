@@ -1,6 +1,4 @@
-# fds
-
-## chapter 2: Algorithm analysis
+# chapter 2: Algorithm analysis
 
 - what is algorithm?
     1. 0 or more input(pi)
@@ -34,7 +32,7 @@
     ```
     Tsum(n) = 2n+3,在for中i从0~n运算了n+1次，实际执行了0~n-1共n次for内部语句,最后return算一句,共2n+3
 
-### asymptotic(渐进) notation(标记)
+## asymptotic(渐进) notation(标记)
 
 我们的重点是比较趋势，所以没有必要去专门求步数。
 
@@ -48,7 +46,7 @@
     - 严格渐进上界，T(N)的阶必须低于p(N)
 - 要求:始终寻找尽可能最贴近的值
 
-#### Rules
+## Rules
 
 1. If T1(N) = O(f(N)) and T2(N) = O(g(N)),then:
     - (a) T1(N) + T2(N) = max( O(f(N)), O(g(N)) )
@@ -62,4 +60,3 @@
 !!! note "主定理"
     
 - hw: Balloon Popping, 滑动窗口法O(N)优于暴力计算O(N^2),关键是求取一个区间问题，以及维护左边界与右边界，排序 + 连续区间 + 单调性。(等着写一篇blog)
-

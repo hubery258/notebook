@@ -142,7 +142,35 @@ $$
 
 #### [格雷码](https://note.isshikih.top/cour_note/D2QD_DigitalDesign/Chap01/#%E6%A0%BC%E9%9B%B7%E7%A0%81:~:text=%E6%9B%B4%E5%A4%9A%E6%98%AF%E6%95%B0%E5%80%BC%E3%80%82-,%E6%A0%BC%E9%9B%B7%E7%A0%81,-%C2%B6)<br>
 
-理解了格雷码存在的必要，就是每次只改变一个bit，但是变化规则不是很清晰
+理解了格雷码存在的必要，就是每次只改变一个bit，详细的变化规则:
+> A Gray code for a counting sequence of n binary code words (n must be even) 
+can be constructed by replacing each of the first n/2 numbers in the sequence with a 
+code word consisting of 0 followed by the even parity for each bit of the binary code 
+word and the bit to its left. For example, for the binary code word 0100, the Gray 
+code word is 0, parity(0, 1), parity(1, 0), parity(0, 0)  =  0110. Next, take the 
+sequence of numbers formed and copy it in reverse order with the leftmost 0 
+replaced by a 1. This new sequence provides the Gray code words for the second n/2 
+of the original n code words. For example, for BCD codes, the first five Gray code 
+words are 0000, 0001, 0011, 0010, and 0110. Reversing the order of these codes and 
+replacing the leftmost 0 with a 1, we obtain 1110, 1010, 1011, 1001, and 1000 for the 
+last five Gray codes. For the special cases in which the original binary codes are 0 
+through 2n- 1, each Gray code word may be formed directly from the correspond
+ing binary code word by copying its leftmost bit and then replacing each of the 
+remaining bits with the even parity of the bit of the number and the bit to its left.
+
+!!! 自己再去理解一下啊哥
+    所以实际的 hexadecimal Gray code就是把最底层的0~15这16个数字先转成二进制(因为最高用到第四位所以就是4位二进制)，然后在四位二进制的基础上取格雷码，再转回去。其他的比如8进制gray code就是把0~7这8个数转成3位二进制？那么如果要表示12这样的十六进制呢？
+    见ai对话“格雷码” copilot篇
+    十六进制格雷码表只定义了 0~F 这 16 个基本符号。
+
+    每个十六进制符号对应一个 4 位二进制格雷码。
+    所以，十六进制格雷码本质上是 逐位映射：每一位十六进制数都单独转换成格雷码。
+    🔹 举例：十六进制 12
+    十六进制 12 = 两位十六进制数：1 和 2。
+    我们分别查表：
+    十六进制 1 → 格雷码 1
+    十六进制 2 → 格雷码 3
+    所以十六进制数 12 的格雷码表示就是 13。
 
 ## chapter 2 
 
