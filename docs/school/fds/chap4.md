@@ -6,6 +6,8 @@
         - **inorder**: 中序遍历(二叉树特有)
         - **postorder**: 后序遍历(根在最后)
         - **Levelorder**: 层序遍历
+        - **predecessor**: 前驱
+        - **successor**: 后继
     - **key**: 节点储存的值
  
 ## 基本概念
@@ -767,3 +769,146 @@ void inorderTraverse(ThreadNode* head) {
     }
 }
 ```
+
+<hr>
+
+### Binary Search Tree（二叉搜索树,BST）
+
+#### 定义  
+- 每个节点有一个唯一的 key（整数）  
+- 左子树**所有节点**的 key < 根节点的 key  
+- 右子树**所有节点**的 key > 根节点的 key  
+- 左右子树也必须是 BST  
+
+#### 基本操作（ADT）  
+
+- `MakeEmpty(T)`：清空树  
+- `Find(X, T)`：查找元素  
+- `FindMin(T)`：查找最小值  
+- `FindMax(T)`：查找最大值  
+- `Insert(X, T)`：插入元素  
+- `Delete(X, T)`：删除元素  
+- `Retrieve(P)`：返回节点值  
+
+#### 实现  
+
+```c
+// 结构定义
+typedef struct TreeNode {
+    int element;                // 节点值（key）
+    struct TreeNode* left;      // 左子树
+    struct TreeNode* right;     // 右子树
+} TreeNode;
+
+typedef TreeNode* SearchTree;
+typedef TreeNode* Position; 
+
+// 1. 查找（Find）
+
+// 递归版
+Position Find(int X, SearchTree T) {
+    if (T == NULL) return NULL;              // 空树
+    if (X < T->element) return Find(X, T->left);   // 左子树
+    else if (X > T->element) return Find(X, T->right); // 右子树
+    else return T;                           // 找到
+}
+// 迭代版
+Position Iter_Find(int X, SearchTree T) {
+    while (T != NULL) {
+        if (X == T->element) return T;
+        else if (X < T->element) T = T->left;
+        else T = T->right;
+    }
+    return NULL;
+}
+
+// 2. 查找最小值 / 最大值  
+
+Position FindMin(SearchTree T) {
+    if (T == NULL) return NULL;
+    else if (T->left == NULL) return T;
+    else return FindMin(T->left);
+}
+
+Position FindMax(SearchTree T) {
+    if (T == NULL) return NULL;
+    while (T->right != NULL) T = T->right;
+    return T;
+}
+
+// 3. 插入（Insert）
+SearchTree Insert(int X, SearchTree T) {
+    if (T == NULL) { // 创建新节点
+        T = malloc(sizeof(TreeNode));
+        T->element = X;
+        T->left = T->right = NULL;
+    } else if (X < T->element) {
+        T->left = Insert(X, T->left);
+    } else if (X > T->element) {
+        T->right = Insert(X, T->right);
+    }
+    // 如果 X == T->element，不插入（不允许重复）
+    return T;
+}
+
+/* 4. 删除（Delete）
+分三种情况：
+1. **叶子节点**：直接删除  
+2. **度为 1**：用子节点替代  
+3. **度为 2**：用右子树最小值（或左子树最大值）替代，再删除该节点*/
+SearchTree Delete(int X, SearchTree T) {
+    Position TmpCell;
+    if (T == NULL) return NULL;
+
+    if (X < T->element) T->left = Delete(X, T->left);
+    else if (X > T->element) T->right = Delete(X, T->right);
+    else { // 找到要删除的节点
+        if (T->left && T->right) { // 两个孩子
+            TmpCell = FindMin(T->right);
+            T->element = TmpCell->element;
+            T->right = Delete(T->element, T->right);
+        } else { // 一个或零个孩子
+            TmpCell = T;
+            if (T->left == NULL) T = T->right;
+            else if (T->right == NULL) T = T->left;
+            free(TmpCell);
+        }
+    }
+    return T;
+}
+```
+
+<hr>
+
+??? example
+
+    假设插入顺序：30, 20, 40, 10, 25, 35, 50  
+
+    构建的 BST：
+
+    ```
+            30
+           /  \
+         20    40
+        / \    / \
+      10  25  35  50
+    ```
+
+    - `Find(25)` → 30 → 20 → 25 → 找到  
+    - `FindMin()` → 一直往左 → 10  
+    - `FindMax()` → 一直往右 → 50  
+    - `Insert(22)` → 插到 25 左边  
+    - `Delete(20)` → 用右子树最小值 25 替代，再删除 25  
+
+
+#### 平均情况分析  
+
+- 插入顺序好（平衡） → 树高约 \(\log n\)，操作效率 O(log n)  
+- 插入顺序差（递增或递减） → 退化成链表，树高 = n，操作效率 O(n), 比如只有一条线等等...  
+
+??? note "平衡"
+    平衡二叉树: 对任意节点，**左子树高度-右子树高度的绝对值<=1**
+
+???+ note "decision tree for binary search?"
+    出现在作业题中，这种tree的要求是**必须是完全二叉树**且是平衡二叉树，平衡二叉树的定义见上;<br>
+    完全二叉树:除了最后一层，其他层都是满的；最后一层的节点从左到右连续，没有空隙。
