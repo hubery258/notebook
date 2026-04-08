@@ -1,0 +1,3159 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://hubery258.github.io/notebook/school/dm/">
+      
+      
+        <link rel="prev" href="../digital/">
+      
+      
+        <link rel="next" href="../zju/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>离散数学 - Hubery's notebook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M64%20480c-35.3%200-64-28.7-64-64V96c0-35.3%2028.7-64%2064-64h320c35.3%200%2064%2028.7%2064%2064v213.5c0%2017-6.7%2033.3-18.7%2045.3L322.7%20461.3c-12%2012-28.3%2018.7-45.3%2018.7zm325.5-176H296c-13.3%200-24%2010.7-24%2024v93.5z%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M461.2%2018.9C472.7%2024%20480%2035.4%20480%2048v416c0%2012.6-7.3%2024-18.8%2029.1s-24.8%203.2-34.3-5.1l-46.6-40.7c-43.6-38.1-98.7-60.3-156.4-63V480c0%2017.7-14.3%2032-32%2032h-32c-17.7%200-32-14.3-32-32v-96C57.3%20384%200%20326.7%200%20256s57.3-128%20128-128h84.5c61.8-.2%20121.4-22.7%20167.9-63.3L427%2024c9.4-8.3%2022.9-10.2%2034.3-5.1zM224%20320v.2c70.3%202.7%20137.8%2028.5%20192%2073.4V118.3c-54.2%2044.9-121.7%2070.7-192%2073.4z%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%200c14.7%200%2028.2%208.1%2035.2%2021l216%20400c6.7%2012.4%206.4%2027.4-.8%2039.5S486.1%20480%20472%20480H40c-14.1%200-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9%2020.5-21%2035.2-21m0%20352a32%2032%200%201%200%200%2064%2032%2032%200%201%200%200-64m0-192c-18.2%200-32.7%2015.5-31.4%2033.7l7.4%20104c.9%2012.5%2011.4%2022.3%2023.9%2022.3%2012.6%200%2023-9.7%2023.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M288%200H128c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032v151.5L7.5%20426.3C2.6%20435%200%20444.7%200%20454.7%200%20486.4%2025.6%20512%2057.3%20512h333.4c31.6%200%2057.3-25.6%2057.3-57.3%200-10-2.6-19.8-7.5-28.4L320%20215.5V64c17.7%200%2032-14.3%2032-32S337.7%200%20320%200zm-96%20215.5V64h64v151.5c0%2011.1%202.9%2022.1%208.4%2031.8L306%20320H142l41.6-72.7c5.5-9.7%208.4-20.6%208.4-31.8%22/%3E%3C/svg%3E');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M384%20512H96c-53%200-96-43-96-96V96C0%2043%2043%200%2096%200h304c26.5%200%2048%2021.5%2048%2048v288c0%2020.9-13.4%2038.7-32%2045.3V448c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032zM96%20384c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032h256v-64zm32-232c0%2013.3%2010.7%2024%2024%2024h176c13.3%200%2024-10.7%2024-24s-10.7-24-24-24H152c-13.3%200-24%2010.7-24%2024m24%2072c-13.3%200-24%2010.7-24%2024s10.7%2024%2024%2024h176c13.3%200%2024-10.7%2024-24s-10.7-24-24-24z%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%20512a256%20256%200%201%200%200-512%20256%20256%200%201%200%200%20512m-32-352a32%2032%200%201%201%2064%200%2032%2032%200%201%201-64%200m-8%2064h48c13.3%200%2024%2010.7%2024%2024v88h8c13.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024h-80c-13.3%200-24-10.7-24-24s10.7-24%2024-24h24v-64h-24c-13.3%200-24-10.7-24-24s10.7-24%2024-24%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/friends.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Hubery&#39;s notebook" class="md-header__button md-logo" aria-label="Hubery's notebook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hubery's notebook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              离散数学
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="关闭自动模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="关闭自动模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="blue"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/hubery258/notebook" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    note
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../cs/CS50X/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  CS
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../fds/chap2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ZJU
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/simpletasker/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../life/reading/%E5%A5%BD%E8%B6%A3%E5%91%B3%E4%B8%8E%E5%9D%8F%E8%89%BA%E6%9C%AF%E8%AE%B2%E5%BA%A7/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  文艺向
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../friends/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  朋友们
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Hubery&#39;s notebook" class="md-nav__button md-logo" aria-label="Hubery's notebook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Hubery's notebook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/hubery258/notebook" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    note
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/CS50X/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS50X
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs%E9%80%9F%E6%88%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computer Science Crash Course
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/md/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    markdown笔记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    blog配置相关
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    blog配置相关
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/mkdocs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    mkdocs配置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/jekyll/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    jekyll配置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Missing Semester
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Missing Semester
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/Missing%20Semester/git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/Missing%20Semester/lec1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lec1 SHELL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/Missing%20Semester/lec2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lec2 SHELL脚本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/Missing%20Semester/lec3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lec3 Vim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/Missing%20Semester/lec4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lec4 数据处理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/Missing%20Semester/lec5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lec5 命令行环境
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/Missing%20Semester/lec6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lec6 git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/Missing%20Semester/lec7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lec7 调试与性能分析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CS61A
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CS61A
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs61a/function/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    函数及其抽象
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/cs61a/data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据及其抽象
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZJU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ZJU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据结构基础 | fds
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    数据结构基础 | fds
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fds/chap2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    chapter 2 Algorithm analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fds/chap3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    chapter 3 List,Stacks,Queues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fds/chap4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    chapter 4 Trees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../digital/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数字逻辑设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    离散数学
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    离散数学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chapter1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zju/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    大一课程总结
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    project
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    project
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/simpletasker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simple Tasker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    文艺向
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    文艺向
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reading
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reading
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/reading/%E5%A5%BD%E8%B6%A3%E5%91%B3%E4%B8%8E%E5%9D%8F%E8%89%BA%E6%9C%AF%E8%AE%B2%E5%BA%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    一次讲座
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/reading/nicai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    当尼采哭泣
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/reading/camus1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    堕落 流放与王国
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/reading/despair/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    在绝望之巅
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/reading/failure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    我不在意人类的失败
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/reading/strange/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    将熟悉变为陌生
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/reading/crime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    罪与罚
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/reading/action/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    福格行为模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/reading/flower_love/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    花束般的恋爱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/reading/shoutout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    绝叫
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/reading/life_philo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    冯友兰哲学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/reading/writing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    汪曾祺写作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Music
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Music
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/music/theory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    乐理笔记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/music/rhyme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    创作笔记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/music/26_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    26年
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    无用之用
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    无用之用
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/note/workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工作模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/note/focus.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/note/flower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    花
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../life/question/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    千问集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../friends/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    朋友们
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chapter1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        chapter2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">离散数学</h1>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>由于本身对这门课的意义感受不大，不会详细体系地记录笔记，只记录一些必要的必考的知识。</p>
+</div>
+<h2 id="chapter1">chapter1</h2>
+<ol>
+<li>
+<p>命题 (Proposition)</p>
+<ul>
+<li><strong>命题 proposition</strong>：一个陈述句，要么真 (True)，要么假 (False)，不能同时为真和假。  </li>
+<li><strong>命题变量 propositional variable</strong>：常用小写字母 (p, q, r, s)。  </li>
+<li><strong>真值 truth value</strong>：T (真)，F (假)。  </li>
+</ul>
+</li>
+<li>
+<p>逻辑运算 (Logical Operators)</p>
+<ul>
+<li><strong>否定 negation (¬p)</strong>：真变假，假变真。  </li>
+<li><strong>合取 conjunction (p ∧ q)</strong>：只有当 p 和 q 都为真时为真。  </li>
+<li><strong>析取 disjunction (p ∨ q)</strong>：至少一个为真时为真（inclusive OR）。  </li>
+<li><strong>异或 exclusive OR (p ⊕ q)</strong>：仅当 p 和 q 中恰好一个为真时为真。  </li>
+<li><strong>条件 conditional (p → q)</strong>：只有 p 为真且 q 为假时为假。  </li>
+<li><strong>双条件 biconditional (p ↔ q)</strong>：p 与 q 真值相同则为真。  </li>
+</ul>
+</li>
+<li>
+<p>条件语句的变形 (Conditional Variants)</p>
+<ul>
+<li><strong>逆命题 converse</strong>：<span class="arithmatex"><span class="MathJax_Preview">q → p</span><script type="math/tex">q → p</script></span>。  </li>
+<li><strong>否命题 inverse</strong>：<span class="arithmatex"><span class="MathJax_Preview">¬ p → ¬ q</span><script type="math/tex">¬ p → ¬ q</script></span>。  </li>
+<li><strong>逆否命题 contrapositive</strong>：<span class="arithmatex"><span class="MathJax_Preview">¬q → ¬p</span><script type="math/tex">¬q → ¬p</script></span>。  </li>
+<li>条件语句与其逆否命题等价。  </li>
+</ul>
+</li>
+<li>
+<p>运算优先级 (Precedence of Operators)</p>
+<ul>
+<li>括号最高，其次是 <strong>¬</strong>，再是 <strong>∧, ∨</strong>，最后是 <strong>→, ↔</strong>。 </li>
+</ul>
+</li>
+<li>
+<p>复合命题分类 (Classification of Compound Propositions)</p>
+<ul>
+<li><strong>永真式 tautology</strong>：始终为真。  </li>
+<li><strong>永假式 contradiction</strong>：始终为假。  </li>
+<li><strong>偶然式 contingency</strong>：既不是永真也不是永假。  </li>
+</ul>
+</li>
+<li>
+<p>命题等价 (Logical Equivalence)</p>
+<ul>
+<li><strong>逻辑等价 logically equivalent</strong>：若 <span class="arithmatex"><span class="MathJax_Preview">p &lt;-&gt; q</span><script type="math/tex">p <-> q</script></span> 是永真式，则称 <span class="arithmatex"><span class="MathJax_Preview">p</span><script type="math/tex">p</script></span> 与 <span class="arithmatex"><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 等价。  </li>
+<li><strong>记号 notation</strong>：<span class="arithmatex"><span class="MathJax_Preview">p ≡ q</span><script type="math/tex">p ≡ q</script></span> 或 <span class="arithmatex"><span class="MathJax_Preview">p &lt;-&gt; q</span><script type="math/tex">p <-> q</script></span>。  </li>
+<li><strong>证明方法</strong>：  <ol>
+<li><strong>真值表 truth table</strong>：逐行比较。  </li>
+<li><strong>已知等价式 equivalences</strong>：利用已证明的等价式逐步替换。  </li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>常见等价律 (Common Equivalences)</p>
+<ul>
+<li>恒等律 Identity laws：<span class="arithmatex"><span class="MathJax_Preview">p ∧ T ≡ p ; p ∨ F ≡ p</span><script type="math/tex">p ∧ T ≡ p ; p ∨ F ≡ p</script></span>  </li>
+<li>支配律 Domination laws：<span class="arithmatex"><span class="MathJax_Preview">p ∨ T ≡ T ; p ∧ F ≡ F</span><script type="math/tex">p ∨ T ≡ T ; p ∧ F ≡ F</script></span>  </li>
+<li>幂等律 Idempotent laws：<span class="arithmatex"><span class="MathJax_Preview">p ∨ p ≡ p ; p ∧ p ≡ p</span><script type="math/tex">p ∨ p ≡ p ; p ∧ p ≡ p</script></span>  </li>
+<li>双重否定 Double negation：¬(¬p) ≡ p  </li>
+<li>交换律 Commutative laws：<span class="arithmatex"><span class="MathJax_Preview">p ∨ q ≡ q ∨ p ; p ∧ q ≡ q ∧ p</span><script type="math/tex">p ∨ q ≡ q ∨ p ; p ∧ q ≡ q ∧ p</script></span>  </li>
+<li>结合律 Associative laws：<span class="arithmatex"><span class="MathJax_Preview">(p ∨ q) ∨ r ≡ p ∨ (q ∨ r)</span><script type="math/tex">(p ∨ q) ∨ r ≡ p ∨ (q ∨ r)</script></span>  </li>
+<li><strong>分配律 Distributive laws</strong>：<span class="arithmatex"><span class="MathJax_Preview">p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)</span><script type="math/tex">p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)</script></span>  </li>
+<li><strong>德摩根律 De Morgan’s laws</strong>：¬(p ∧ q) ≡ ¬p ∨ ¬q ；¬(p ∨ q) ≡ ¬p ∧ ¬q  </li>
+<li><strong>吸收律 Absorption laws</strong>：<span class="arithmatex"><span class="MathJax_Preview">p ∨ (p ∧ q) ≡ p ; p ∧ (p ∨ q) ≡ p</span><script type="math/tex">p ∨ (p ∧ q) ≡ p ; p ∧ (p ∨ q) ≡ p</script></span>  </li>
+<li>否定律 Negation laws：<span class="arithmatex"><span class="MathJax_Preview">p ∨ ¬p ≡ T,\; p ∧ ¬p ≡ F</span><script type="math/tex">p ∨ ¬p ≡ T,\; p ∧ ¬p ≡ F</script></span>  </li>
+<li><strong>蕴涵律 Implication law</strong>：<span class="arithmatex"><span class="MathJax_Preview">p → q ≡ ¬p ∨ q</span><script type="math/tex">p → q ≡ ¬p ∨ q</script></span>  </li>
+<li>双条件律 Equivalence law：<span class="arithmatex"><span class="MathJax_Preview">p ↔ q ≡ (p → q) ∧ (q → p)</span><script type="math/tex">p ↔ q ≡ (p → q) ∧ (q → p)</script></span>  </li>
+</ul>
+</li>
+<li>
+<p>可满足性 (Satisfiability)</p>
+<ul>
+<li><strong>可满足 satisfiable</strong>：存在某种真值赋值使复合命题为真。  </li>
+<li><strong>不可满足 unsatisfiable</strong>：无论如何赋值都为假。  </li>
+<li><strong>关系</strong>：命题不可满足 ⇔ 其否定是永真式。  </li>
+</ul>
+</li>
+<li>
+<p>谓词 (Predicate)</p>
+<ul>
+<li><strong>谓词 predicate</strong>：含有变量的陈述句，变量取值后才能确定真值。  </li>
+<li><strong>命题函数 propositional function</strong>：如 P(x), Q(x,y)。  </li>
+<li>示例：  <ul>
+<li>P(x): x &gt; 3  </li>
+<li>Q(x,y): x &lt; y </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>量词(Quantifier):</p>
+<ul>
+<li>全称量词 (Universal Quantifier)<ul>
+<li><strong>全称量词 universal quantifier</strong>：<code>∀xP(x)</code>，表示“对所有 x，P(x) 成立”。  </li>
+<li><strong>反例 counterexample</strong>： <code>∀xP(x)</code> 为假的元素。  </li>
+<li>常见表达：for all, for every, for each, given any。  </li>
+</ul>
+</li>
+<li>存在量词 (Existential Quantifier)<ul>
+<li><strong>存在量词 existential quantifier</strong>：<code>∃xP(x)</code>，表示“存在某个 x 使得 P(x) 成立”。  </li>
+<li>常见表达：there exists, for some, at least one。  </li>
+<li><strong>唯一量词 uniqueness quantifier</strong>：∃!xP(x)，表示“存在唯一的 x 使得 P(x) 成立”。  </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>量词的逻辑等价 (Logical Equivalences with Quantifiers)</p>
+<ul>
+<li><strong>德摩根律 De Morgan’s laws for quantifiers</strong>：  <ul>
+<li>¬∃xP(x) ≡ ∀x¬P(x)  </li>
+<li>¬∀xP(x) ≡ ∃x¬P(x)  </li>
+</ul>
+</li>
+<li><strong>结合逻辑运算 equivalences</strong>：  <ul>
+<li>∀x(A(x) ∧ B(x)) ≡ (∀xA(x)) ∧ (∀xB(x))  </li>
+<li>∃x(A(x) ∨ B(x)) ≡ (∃xA(x)) ∨ (∃xB(x))  </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>嵌套量词 (Nested Quantifiers)</p>
+</li>
+<li><strong>嵌套量词 nested quantifiers</strong>：一个量词在另一个量词的作用域内。    </li>
+</ol>
+<hr>
+
+<ol>
+<li>有效论证 (Valid Arguments)</li>
+<li><strong>论证 argument</strong>：一系列命题，最后一个是结论，其余是前提。  </li>
+<li><strong>有效 valid</strong>：如果所有前提为真，则结论必为真。  </li>
+<li><strong>论证形式 argument form</strong>：用命题变量表示的复合命题序列。  </li>
+<li>
+<p><strong>判定方法</strong>：若 <strong>P<sub>1</sub> ∧ P<sub>2</sub> ∧ … ∧ P<sub>n</sub> → q</strong> 是永真式，则论证有效。  </p>
+</li>
+<li>
+<p>命题逻辑的推理规则 (Rules of Inference for Propositional Logic)</p>
+</li>
+<li><strong>肯定前件 Modus Ponens</strong>：  <ul>
+<li>前提：p, p → q </li>
+<li>结论：q  </li>
+</ul>
+</li>
+<li><strong>否定后件 Modus Tollens</strong>：  <ul>
+<li>前提：¬q, p → q </li>
+<li>结论：¬p  </li>
+</ul>
+</li>
+<li><strong>假言三段论 Hypothetical Syllogism</strong>：  <ul>
+<li>前提：p → q, q → r  </li>
+<li>结论：p → r  </li>
+</ul>
+</li>
+<li><strong>析取三段论 Disjunctive Syllogism</strong>：  <ul>
+<li>前提：p ∨ q, ¬p  </li>
+<li>结论：q</li>
+</ul>
+</li>
+<li><strong>加法 Addition</strong>：  <ul>
+<li>前提：p  </li>
+<li>结论：p ∨ q  </li>
+</ul>
+</li>
+<li><strong>化简 Simplification</strong>：  <ul>
+<li>前提：p ∧ q  </li>
+<li>结论：p  </li>
+</ul>
+</li>
+<li><strong>合取 Conjunction</strong>：  <ul>
+<li>前提：p, q  </li>
+<li>结论：p ∧ q  </li>
+</ul>
+</li>
+<li>
+<p><strong>归结 Resolution</strong>：  </p>
+<ul>
+<li>前提：p ∨ q, ¬p ∨ r  </li>
+<li>结论：q ∨ r  </li>
+</ul>
+</li>
+<li>
+<p>量词推理规则 (Rules of Inference for Quantified Statements)</p>
+</li>
+<li><strong>全称实例化 Universal Instantiation (UI)</strong>：∀xP(x) ⊢ P(c)。  </li>
+<li><strong>全称推广 Universal Generalization (UG)</strong>：若对任意 c 成立，则 ⊢ ∀xP(x)。  </li>
+<li><strong>存在实例化 Existential Instantiation (EI)</strong>：∃xP(x) ⊢ P(c)（某个 c）。  </li>
+<li>
+<p><strong>存在推广 Existential Generalization (EG)</strong>：若 <code>P(c)</code> 成立，则 ⊢ ∃xP(x)。  </p>
+</li>
+<li>
+<p>综合推理 (Combining Inference Rules)</p>
+</li>
+<li><strong>全称肯定 Universal Modus Ponens</strong>: ∀x(P(x) → Q(x)), P(a) ⊢ Q(a)。  </li>
+<li>
+<p><strong>全称否定 Universal Modus Tollens</strong>：∀x(P(x) → Q(x)), ¬Q(a) ⊢ ¬P(a)。  </p>
+</li>
+<li>
+<p>基本术语 (Terminology)</p>
+</li>
+<li><strong>证明 proof</strong>：建立数学命题真实性的有效论证。  </li>
+<li><strong>定理 theorem</strong>：可以被证明为真的陈述。  </li>
+<li><strong>公理 axiom / postulate</strong>：假定为真的陈述。  </li>
+<li><strong>引理 lemma</strong>：辅助证明其他结果的次要定理。  </li>
+<li><strong>推论 corollary</strong>：由已证明定理直接推出的结论。  </li>
+<li>
+<p><strong>猜想 conjecture</strong>：尚未证明但被认为可能为真的陈述。  </p>
+</li>
+<li>
+<p>证明类型 (Types of Proofs)</p>
+</li>
+<li><strong>直接证明 direct proof</strong>：假设前提成立，推导出结论。  </li>
+<li><strong>逆否证明 proof by contraposition</strong>：证明 ¬Q → ¬P。  </li>
+<li><strong>真空证明 vacuous proof</strong>：若前提 P 为假，则 P → Q 恒为真。  </li>
+<li><strong>平凡证明 trivial proof</strong>：若结论 Q 已知为真，则 P → Q 恒为真。  </li>
+<li><strong>反证法 proof by contradiction</strong>：假设命题为假，推出矛盾。  </li>
+<li><strong>分类讨论 proof by cases</strong>：将前提分解为若干情况，逐一证明。  </li>
+<li><strong>穷举证明 exhaustive proof</strong>：通过有限枚举所有可能情况。  </li>
+<li><strong>存在性证明 existence proof</strong>：  <ul>
+<li>构造性 constructive：给出具体例子。  </li>
+<li>非构造性 nonconstructive：通过矛盾证明存在性。  </li>
+</ul>
+</li>
+<li>
+<p><strong>唯一性证明 uniqueness proof</strong>：证明存在并且只有一个满足条件的元素。  </p>
+</li>
+<li>
+<p>证明策略 (Proof Strategies)</p>
+</li>
+<li><strong>正向推理 forward reasoning</strong>：从前提出发逐步推导结论。  </li>
+<li><strong>逆向推理 backward reasoning</strong>：从结论出发，寻找能推出结论的前提。  </li>
+<li>
+<p><strong>等价证明 proofs of equivalence</strong>：证明双向蕴涵或多个命题的循环蕴涵。  </p>
+</li>
+<li>
+<p>其他方法 (Additional Methods)</p>
+</li>
+<li>数学归纳法 mathematical induction  </li>
+<li>结构归纳法 structural induction  </li>
+<li>康托对角线法 Cantor diagonalization  </li>
+<li>组合证明 combinatorial proofs  </li>
+</ol>
+<hr>
+
+<h2 id="chapter2">chapter2</h2>
+<ol>
+<li>集合基础 (Sets)</li>
+<li><strong>集合 set</strong>：无序的对象集合。  </li>
+<li><strong>元素 element / member</strong>：集合中的对象。  </li>
+<li><strong>表示方法</strong>：  <ul>
+<li>列举法 roster method：如 {1,3,5,7,9}。  </li>
+<li>省略号 ellipses：如 {1,2,3,…,99}。  </li>
+<li>描述法 set-builder notation：{x | P(x)}。  </li>
+</ul>
+</li>
+<li><strong>维恩图 Venn diagram</strong>：用矩形表示全集 U，用圆表示子集。  </li>
+<li>
+<p><strong>空集 empty set</strong>：<span class="arithmatex"><span class="MathJax_Preview">\varnothing</span><script type="math/tex">\varnothing</script></span>，是所有集合的子集。  </p>
+</li>
+<li>
+<p>集合关系 (Relations Between Sets)</p>
+</li>
+<li><strong>子集 subset</strong>：<span class="arithmatex"><span class="MathJax_Preview">A ⊆ B</span><script type="math/tex">A ⊆ B</script></span>。  </li>
+<li><strong>真子集 proper subset</strong>：<span class="arithmatex"><span class="MathJax_Preview">A ⊂ B</span><script type="math/tex">A ⊂ B</script></span>。  </li>
+<li><strong>相等 equal sets</strong>：若元素完全相同。  </li>
+<li>
+<p><strong>基数 cardinality</strong>：集合中元素个数，记作 |S|。有限集与无限集。  </p>
+</li>
+<li>
+<p>幂集 (Power Set)</p>
+</li>
+<li><strong>定义 definition</strong>：集合 S 的所有子集构成的集合，记作 P(S)。  </li>
+<li>
+<p><strong>性质</strong>：若 <code>|S|=n</code>，则 |P(S)|=2<sup>n</sup>。  </p>
+</li>
+<li>
+<p>笛卡尔积 (Cartesian Product)</p>
+</li>
+<li><strong>定义 definition</strong>：A × B = {(a,b) | a ∈ A, b ∈ B}。  </li>
+<li><strong>性质</strong>：若 |A|=m, |B|=n，则 |A × B| = mn。  </li>
+<li>
+<p><strong>注意</strong>：A × B != B × A。  </p>
+</li>
+<li>
+<p>真值集 (Truth Sets of Quantifiers)</p>
+</li>
+<li>
+<p>给定谓词 P 和定义域 D，真值集为 {x ∈ D | P(x)}。  </p>
+</li>
+<li>
+<p>集合运算 (Set Operations)</p>
+</li>
+<li><strong>并 union</strong>：<span class="arithmatex"><span class="MathJax_Preview">A \cup B = \{x | x \in A \vee x \in B\}</span><script type="math/tex">A \cup B = \{x | x \in A \vee x \in B\}</script></span>。  </li>
+<li><strong>交 intersection</strong>：<span class="arithmatex"><span class="MathJax_Preview">A \cap B = \{x | x \in A \wedge x \in B\}</span><script type="math/tex">A \cap B = \{x | x \in A \wedge x \in B\}</script></span>。  </li>
+<li><strong>差 difference</strong>：<span class="arithmatex"><span class="MathJax_Preview">A - B = \{x | x \in A \wedge x \notin B\}</span><script type="math/tex">A - B = \{x | x \in A \wedge x \notin B\}</script></span>。  </li>
+<li><strong>补 complement</strong>：<span class="arithmatex"><span class="MathJax_Preview">\overline{A} = \{x | x \notin A, x \in U\}</span><script type="math/tex">\overline{A} = \{x | x \notin A, x \in U\}</script></span>。  </li>
+<li><strong>对称差 symmetric difference</strong>：<span class="arithmatex"><span class="MathJax_Preview">A \oplus B = (A \cup B) - (A \cap B)</span><script type="math/tex">A \oplus B = (A \cup B) - (A \cap B)</script></span>。  </li>
+<li>
+<p><strong>基数公式</strong>：<span class="arithmatex"><span class="MathJax_Preview">|A \cup B| = |A| + |B| - |A \cap B|</span><script type="math/tex">|A \cup B| = |A| + |B| - |A \cap B|</script></span>。  </p>
+</li>
+<li>
+<p>集合恒等式 (Set Identities)</p>
+</li>
+<li>恒等律 Identity laws：<span class="arithmatex"><span class="MathJax_Preview">A \cup \varnothing = A, A \cap U = A</span><script type="math/tex">A \cup \varnothing = A, A \cap U = A</script></span>。  </li>
+<li>支配律 Domination laws：<span class="arithmatex"><span class="MathJax_Preview">A \cup U = U, A \cap \varnothing = \varnothing</span><script type="math/tex">A \cup U = U, A \cap \varnothing = \varnothing</script></span>。  </li>
+<li>幂等律 Idempotent laws：<span class="arithmatex"><span class="MathJax_Preview">A \cup A = A, A \cap A = A</span><script type="math/tex">A \cup A = A, A \cap A = A</script></span>。  </li>
+<li>交换律 Commutative laws：<span class="arithmatex"><span class="MathJax_Preview">A \cup B = B \cup A</span><script type="math/tex">A \cup B = B \cup A</script></span>。  </li>
+<li>结合律 Associative laws：<span class="arithmatex"><span class="MathJax_Preview">(A \cup B) \cup C = A \cup (B \cup C)</span><script type="math/tex">(A \cup B) \cup C = A \cup (B \cup C)</script></span>。  </li>
+<li>分配律 Distributive laws：<span class="arithmatex"><span class="MathJax_Preview">A \cup (B \cap C) = (A \cup B) \cap (A \cup C)</span><script type="math/tex">A \cup (B \cap C) = (A \cup B) \cap (A \cup C)</script></span>。  </li>
+<li>德摩根律 De Morgan’s laws：<span class="arithmatex"><span class="MathJax_Preview">\overline{A \cup B} = \overline{A} \cap \overline{B}</span><script type="math/tex">\overline{A \cup B} = \overline{A} \cap \overline{B}</script></span>。  </li>
+<li>吸收律 Absorption laws：<span class="arithmatex"><span class="MathJax_Preview">A \cup (A \cap B) = A</span><script type="math/tex">A \cup (A \cap B) = A</script></span>。  </li>
+<li>
+<p>补集律 Complement laws：<span class="arithmatex"><span class="MathJax_Preview">A \cup \overline{A} = U, A \cap \overline{A} = \varnothing</span><script type="math/tex">A \cup \overline{A} = U, A \cap \overline{A} = \varnothing</script></span>。  </p>
+</li>
+<li>
+<p>计算机表示 (Computer Representation)</p>
+</li>
+<li>用位串 bit string 表示集合，1 表示元素在集合中，0 表示不在。  </li>
+<li>
+<p>并 → 位或 OR，交 → 位与 AND，差 → 位运算。  </p>
+</li>
+<li>
+<p>函数 (Functions)</p>
+</li>
+<li><strong>定义 definition</strong>：函数 <span class="arithmatex"><span class="MathJax_Preview">f: A \to B</span><script type="math/tex">f: A \to B</script></span>，将集合 A 中每个元素映射到集合 B 中唯一的元素。  <ul>
+<li>A：定义域 domain  </li>
+<li>B：陪域 codomain  </li>
+<li>f(A)：值域 range  </li>
+</ul>
+</li>
+<li><strong>图像 graph</strong>：函数的图像是有序对集合 <span class="arithmatex"><span class="MathJax_Preview">\{(a,f(a)) | a \in A\}</span><script type="math/tex">\{(a,f(a)) | a \in A\}</script></span>。  </li>
+<li>
+<p><strong>函数性质</strong>：  </p>
+<ul>
+<li>单射 injective (一一函数 one-to-one)：不同输入对应不同输出。  </li>
+<li>满射 surjective (onto)：陪域中每个元素都有原像。  </li>
+<li>双射 bijection：既是单射又是满射。  </li>
+<li>单调 monotonic：严格递增或严格递减。  </li>
+<li>反函数 inverse function：仅双射函数可逆，记作 <span class="arithmatex"><span class="MathJax_Preview">f^{-1}</span><script type="math/tex">f^{-1}</script></span>。  </li>
+<li>复合函数 composition：<span class="arithmatex"><span class="MathJax_Preview">(f \circ g)(a) = f(g(a))</span><script type="math/tex">(f \circ g)(a) = f(g(a))</script></span>。  </li>
+</ul>
+</li>
+<li>
+<p>特殊函数 (Special Functions)</p>
+</li>
+<li><strong>取整函数 floor function</strong>：<span class="arithmatex"><span class="MathJax_Preview">\lfloor x \rfloor</span><script type="math/tex">\lfloor x \rfloor</script></span>，不大于 x 的最大整数。  </li>
+<li><strong>上取整函数 ceiling function</strong>：<span class="arithmatex"><span class="MathJax_Preview">\lceil x \rceil</span><script type="math/tex">\lceil x \rceil</script></span>，不小于 x 的最小整数。  </li>
+<li>
+<p><strong>性质 properties</strong>：  </p>
+<ul>
+<li><span class="arithmatex"><span class="MathJax_Preview">\lfloor -x \rfloor = -\lceil x \rceil</span><script type="math/tex">\lfloor -x \rfloor = -\lceil x \rceil</script></span>，<span class="arithmatex"><span class="MathJax_Preview">\lceil -x \rceil = -\lfloor x \rfloor</span><script type="math/tex">\lceil -x \rceil = -\lfloor x \rfloor</script></span>。  </li>
+<li><span class="arithmatex"><span class="MathJax_Preview">\lfloor x+m \rfloor = \lfloor x \rfloor + m</span><script type="math/tex">\lfloor x+m \rfloor = \lfloor x \rfloor + m</script></span>，其中 m 为整数。  </li>
+</ul>
+</li>
+<li>
+<p>序列 (Sequences)</p>
+</li>
+<li><strong>定义 definition</strong>：序列是从整数集合到某集合 S 的函数。  </li>
+<li><strong>几何序列 geometric progression</strong>：<span class="arithmatex"><span class="MathJax_Preview">a, ar, ar^2, …</span><script type="math/tex">a, ar, ar^2, …</script></span>。  </li>
+<li><strong>算术序列 arithmetic progression</strong>：<span class="arithmatex"><span class="MathJax_Preview">a, a+d, a+2d, …</span><script type="math/tex">a, a+d, a+2d, …</script></span>。  </li>
+<li>
+<p><strong>常见序列</strong>：平方数 <span class="arithmatex"><span class="MathJax_Preview">n^2</span><script type="math/tex">n^2</script></span>，立方数 <span class="arithmatex"><span class="MathJax_Preview">n^3</span><script type="math/tex">n^3</script></span>，阶乘 <span class="arithmatex"><span class="MathJax_Preview">n!</span><script type="math/tex">n!</script></span>，幂序列 <span class="arithmatex"><span class="MathJax_Preview">2^n, 3^n</span><script type="math/tex">2^n, 3^n</script></span>。  </p>
+</li>
+<li>
+<p>求和 (Summations)</p>
+</li>
+<li><strong>符号 notation</strong>：<span class="arithmatex"><span class="MathJax_Preview">\sum_{i=m}^n a_i</span><script type="math/tex">\sum_{i=m}^n a_i</script></span>。  </li>
+<li>
+<p><strong>常用公式</strong>：  </p>
+<ul>
+<li><span class="arithmatex"><span class="MathJax_Preview">\sum_{k=1}^n k = \frac{n(n+1)}{2}</span><script type="math/tex">\sum_{k=1}^n k = \frac{n(n+1)}{2}</script></span>  </li>
+<li><span class="arithmatex"><span class="MathJax_Preview">\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}</span><script type="math/tex">\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}</script></span>  </li>
+<li><span class="arithmatex"><span class="MathJax_Preview">\sum_{k=1}^n k^3 = \left(\frac{n(n+1)}{2}\right)^2</span><script type="math/tex">\sum_{k=1}^n k^3 = \left(\frac{n(n+1)}{2}\right)^2</script></span>  </li>
+<li>等比数列求和：<span class="arithmatex"><span class="MathJax_Preview">\sum_{k=0}^n ar^k = a\frac{r^{n+1}-1}{r-1}</span><script type="math/tex">\sum_{k=0}^n ar^k = a\frac{r^{n+1}-1}{r-1}</script></span>  </li>
+</ul>
+</li>
+<li>
+<p>集合的基数 (Cardinality of Sets)</p>
+</li>
+<li><strong>有限集 finite set</strong>：元素个数有限。  </li>
+<li><strong>无限集 infinite set</strong>：元素无限。  </li>
+<li><strong>基数相等 equal cardinality</strong>：若存在双射 <span class="arithmatex"><span class="MathJax_Preview">f: A \to B</span><script type="math/tex">f: A \to B</script></span>，则 <span class="arithmatex"><span class="MathJax_Preview">|A|=|B|</span><script type="math/tex">|A|=|B|</script></span>。  </li>
+<li><strong>可数集 countable set</strong>：有限或与正整数集合 <span class="arithmatex"><span class="MathJax_Preview">\mathbb{Z}^+</span><script type="math/tex">\mathbb{Z}^+</script></span> 等势。  </li>
+<li><strong>不可数集 uncountable set</strong>：如实数区间 (0,1)。  </li>
+<li>
+<p><strong>典型结果</strong>：  </p>
+<ul>
+<li>正整数与偶数集合等势。  </li>
+<li>有理数集合是可数的。  </li>
+<li>实数集合是不可数的（康托对角线法 Cantor diagonalization）。  </li>
+<li>幂集的基数大于原集合。  </li>
+</ul>
+</li>
+<li>
+<p>函数完备性 (Functionally Complete)</p>
+</li>
+<li><strong>定义 definition</strong>：若一组逻辑算子能表达所有复合命题，则称其为函数完备。  </li>
+<li>
+<p>常见完备集合：  </p>
+<ul>
+<li>{¬, ∧, ∨}  </li>
+<li>{¬, ∨}  </li>
+<li>{¬, ∧}  </li>
+</ul>
+</li>
+<li>
+<p>命题标准形式 (Propositional Normal Forms)</p>
+</li>
+<li><strong>文字 literal</strong>：命题变量 <span class="arithmatex"><span class="MathJax_Preview">p</span><script type="math/tex">p</script></span> 或其否定 ¬p。  </li>
+<li>
+<p><strong>子句 clause</strong>：文字的析取或合取。  </p>
+<ul>
+<li>析取子句 disjunctive clause：如 <span class="arithmatex"><span class="MathJax_Preview">p ∨ ¬q</span><script type="math/tex">p ∨ ¬q</script></span>。  </li>
+<li>合取子句 conjunctive clause：如 <span class="arithmatex"><span class="MathJax_Preview">p ∧ ¬q</span><script type="math/tex">p ∧ ¬q</script></span>。  </li>
+</ul>
+</li>
+<li>
+<p>合取范式 CNF (Conjunctive Normal Form)</p>
+</li>
+<li><strong>定义 definition</strong>：若公式是若干析取子句的合取，则为 CNF。  </li>
+<li>
+<p>例子：<span class="arithmatex"><span class="MathJax_Preview">(p ∨ ¬q) ∧ (¬p ∨ r)</span><script type="math/tex">(p ∨ ¬q) ∧ (¬p ∨ r)</script></span>。  </p>
+</li>
+<li>
+<p>析取范式 DNF (Disjunctive Normal Form)</p>
+</li>
+<li><strong>定义 definition</strong>：若公式是若干合取子句的析取，则为 DNF。  </li>
+<li>
+<p>例子：<span class="arithmatex"><span class="MathJax_Preview">(p ∧ q) ∨ (¬p ∧ r)</span><script type="math/tex">(p ∧ q) ∨ (¬p ∧ r)</script></span>。  </p>
+</li>
+<li>
+<p>完全析取范式 Full DNF</p>
+</li>
+<li><strong>最小项 minterm</strong>：每个变量都出现一次（正或负）的合取。  </li>
+<li><strong>完全析取范式 full DNF</strong>：公式写成所有使其为真的最小项的析取。  </li>
+<li>
+<p>可通过真值表直接得到。  </p>
+</li>
+<li>
+<p>前束范式 Prenex Normal Form</p>
+</li>
+<li><strong>定义 definition</strong>：谓词逻辑公式若所有量词都移到最前面，则为前束范式。  </li>
+<li>转化步骤：  <ol>
+<li>消除 → 和 ↔。  </li>
+<li>将否定移到文字层面。  </li>
+<li>必要时重命名变量。  </li>
+<li>将量词前移。  </li>
+</ol>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../digital/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 数字逻辑设计">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                数字逻辑设计
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../zju/" class="md-footer__link md-footer__link--next" aria-label="下一页: 大一课程总结">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                大一课程总结
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://space.bilibili.com/2134294131" target="_blank" rel="noopener" title="bilibili" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92c-26.4-.8-48.2-9.8-65.3-27.2S.7 396.5 0 368.2V169.8c.8-26 9.7-47.6 26.7-65.7C43.8 87.8 65.5 78.8 92 78h29.4L96 52.2c-5.7-5.7-8.6-13-8.6-21.8S90.3 14.3 96 8.6 109 0 117.9 0s16.1 2.9 21.9 8.6L213.1 78h88l74.5-69.4C381.7 2.9 389.2 0 398 0s16.1 2.9 21.9 8.6c5.7 5.7 8.6 13 8.6 21.8s-2.9 16.1-8.6 21.8L394.6 78h29.3c26.4.8 48 9.8 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96c-9.6.4-17.4 3.7-23.6 9.8-6.1 6.1-9.4 13.9-9.8 23.5v194.4c0 9.2 3.3 17 9.8 23.5s14.4 9.8 23.6 9.8h320.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/hubery258" target="_blank" rel="noopener" title="github" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
