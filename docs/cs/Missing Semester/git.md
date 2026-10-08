@@ -46,13 +46,16 @@ int b = 0;  (别人的修改)
 
 ## 远端操作
 - `git remote`列出远端
+    - 我们可以有多个远端
     - `git remote add <name> <url>`添加远端
+    - `git remote rename origin upstream`: 把origin(原来的远程仓库的tag名)重命名为upstream
+    - `git remote -v` 可以查询远程仓库情况
 - `git clone <url>`，从远程仓库中copy一份，存在自己的电脑里
 - `git pull`把线上仓库更改下载到本地仓库，可能出现
     - `git fetch`从远端获取对象/索引+`git merge`等价于`git pull`
 - `git push`提交到远程仓库
     - `git push <remote> <local branch>:<remote branch>`将对象传送至远端并更新远端引用
-    - `git push -u origin xx` 本地分支`xx`第一次传到远端
+    - `git push -u yy xx` 本地分支`xx`第一次传到我们命名为`yy`的远端上，默认名字与`xx`一致
         - `-u`(`--set-upstream`)把`xx`分支推送到远程，同时把本地xx与远程建立追踪关系，以后就可以直接git push
 
 ## 撤销
@@ -92,6 +95,7 @@ int b = 0;  (别人的修改)
     - 忽略`hw01/ok`这个文件(相对路径): `hw01/ok`
     - 忽略任意深度的 `tests` 目录：`**/tests/`
     - 取反,不忽略这个文件（例外）: `!important.pyc`
+        - 注意被忽略的文件夹`filefolder/`和`filefolder/*`意味是不一样的，前者是**直接忽略文件夹，无法读到任何文件，没有忽略的权力**，后者则可以有不忽略的文件
 
 注意已经追踪的文件不会自动被忽略，移除索引操作:
 

@@ -65,8 +65,6 @@ $$
 `&emsp;`表示空格(一个汉字宽度)
 
 1. 列表(记得整合讲缩进)
-1. 链接与图片
-1. 转义字符
 
 
 学习资源：[markdown语法](https://markdown.com.cn/basic-syntax/ "通用语法解析")<br>

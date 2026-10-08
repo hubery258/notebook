@@ -110,18 +110,28 @@ nav:
     - CS61A:
       - 函数及其抽象: cs/cs61a/function.md
       - 数据及其抽象: cs/cs61a/data.md
-    - 前端:
-      - JavaScript: cs/js.md
-    - 开发:
-      - ddd: cs/ddd.md
+    - 全栈开发:
+      - 开发语言:
+        - Dart: cs/language/dart.md 
+        - JavaScript: cs/js.md
+        - Csharp: cs/language/cs.md
+      - 数据库:
+        - sql: cs/language/sql.md
+      - 开发思想:
+        - ddd: cs/ddd.md
     - 工具:
-      - docker: cs/tools/docker.md
-      - git: cs/Missing Semester/git.md
-      - markdown: cs/md.md
-      - mkdocs配置: cs/mkdocs.md
-      - jekyll配置: cs/jekyll.md
+      - 开发基础配置:
+        - 环境变量与PATH: cs/tools/path.md
+        - docker: cs/tools/docker.md
+        - git: cs/Missing Semester/git.md
+      - 文档与建站: 
+        - markdown: cs/md.md
+        - mkdocs配置: cs/mkdocs.md
+        - jekyll配置: cs/jekyll.md
       - ai扫盲: cs/ai.md
   - ZJU:
+    - 哲学问题:
+      - 外部世界的证明: school/question/proof-of-an-external-world.md
     - 数据结构基础 | fds: 
       - chapter 2 Algorithm analysis: school/fds/chap2.md
       - chapter 3 List,Stacks,Queues: school/fds/chap3.md

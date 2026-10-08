@@ -160,3 +160,14 @@ MCP（Model Context Protocol，模型上下文协议）就像为AI生态定制�
 
 **Skill 是框架能力，不是模型能力。** OpenAI 和 Anthropic 把两者打包营销，让人误以为只有 GPT/Claude 才有这些功能——实际上，任何支持 Tool Calling 的模型接上好框架，都能拥有同样的超能力。
 
+
+## 三种基本模型
+
+| 维度	| Base模型 (基座) |	Chat模型 (对话/指令) | Reasoning模型 (推理) |
+| ----  | ---- | ---- | ---- |
+| 思维模式 | 直觉补全 (Autocomplete) | 交互响应 (Response) | 深度思考 (Deliberate Thinking) |
+| 核心训练 | 预训练 (Pre-training) | SFT + RLHF (人类偏好对齐) | 大规模强化学习 (RL on CoT) |
+| 擅长领域 | 下游微调、文本续写 | 文案写作、摘要、对话、翻译 | 数学、复杂代码、科研推理 |
+| 计算消耗 | 训练时大，推理时小 | 训练时中，推理时小 | 训练时大，推理时也大 |
+
+pre-training就是拿着token量极大的文本进行预训练，然后估计猜测这个词元后面跟什么概率高，然后概率生成，然后继续(简单理解)，而reasoning会做机器学习，让机器更倾向也更善于**思考链**(Chain of Thoughts)

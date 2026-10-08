@@ -2,11 +2,10 @@
 
 > 人生忽如寄，寿无金石固。<br>
 
-hello!这里是Hubery的**notebook**。我是浙江大学的大一计算机专业学生，并不是刻板印象里那种极度理性的cser，我不仅追求技术进步，也同样喜欢文学，喜欢记录生活中美好的瞬间。因此这个notebook不仅会关于技术，更有文学向,音乐向的内容。<br>
+hello!这里是Hubery的**notebook**。我是浙江大学的大二计算机专业学生，我不仅追求技术进步，也同样喜欢文学，喜欢记录生活中美好的瞬间。因此这个notebook不仅会关于技术，更有文学向,音乐向的内容。<br>
 学习CS像是带着我来到一片自由之地，在这里我可以以我自己的方式建造任何东西，无拘无束地表达自己。所以我把这个notebook又称为**落梦地**，即是我的梦想与梦境栖息之地。欢迎你一起与我共享这一份梦，友链请联系我！！<br>
 如果你想看到更碎片化更生活化的片段，欢迎来我的[blog](https://hubery258.github.io/)逛逛。
 
-- 🔭 最近主要在学习*CS61A*,*Coursera: Machine Learning*以及*cs50:AI*,顺便看MIT Calculus Course踏实地学微积分。
 - 主要爱好:
     - 💻 **独立软件开发**
     - 📚 **阅读与写作**: 我最喜欢的作家是汪曾祺、加缪以及福柯,[我最喜欢的十本书](https://www.douban.com/doulist/158260489/)
@@ -16,7 +15,6 @@ hello!这里是Hubery的**notebook**。我是浙江大学的大一计算机专�
 # Contact Me:
 [生活化blog](https://blog.ramenboy.cc)<br>
 [知乎](https://www.zhihu.com/people/hubery-62-3 "有时回答一些问题") <br>
-[bilibili](https://space.bilibili.com/2134294131/favlist?fid=2880045931) <br>
 [github](https://github.com/hubery258)<br>
 [豆瓣](https://www.douban.com/people/258193304)<br>
 email: [hubery8065@hotmail.com](mailto:hubery8065@hotmail.com)
@@ -24,7 +22,4 @@ email: [hubery8065@hotmail.com](mailto:hubery8065@hotmail.com)
 公众号： “没有时间感的盆栽”
 
 !!! info inline end "上次更新"
-    2026/8/31
-
-??? note "blog的更新预告"
-    - [ ]配置数学公式插件
+    2026/10/9
