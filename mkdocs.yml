@@ -115,15 +115,18 @@ nav:
         - Dart: cs/language/dart.md 
         - JavaScript: cs/js.md
         - Csharp: cs/language/cs.md
+        - python: cs/language/python.md
       - 数据库:
         - sql: cs/language/sql.md
       - 开发思想:
-        - ddd: cs/ddd.md
+        - ddd: cs/idea/ddd.md
+        - API: cs/idea/api.md
     - 工具:
       - 开发基础配置:
         - 环境变量与PATH: cs/tools/path.md
         - docker: cs/tools/docker.md
         - git: cs/Missing Semester/git.md
+        - shell: cs/tools/shell.md
       - 文档与建站: 
         - markdown: cs/md.md
         - mkdocs配置: cs/mkdocs.md
@@ -131,7 +134,9 @@ nav:
       - ai扫盲: cs/ai.md
   - ZJU:
     - 哲学问题:
-      - 外部世界的证明: school/question/proof-of-an-external-world.md
+      - 知识论: school/question/knowledge.md
+      - 心灵与自我: school/question/mind.md
+      - 自由意志与道德责任: school/question/freewill.md
     - 数据结构基础 | fds: 
       - chapter 2 Algorithm analysis: school/fds/chap2.md
       - chapter 3 List,Stacks,Queues: school/fds/chap3.md
@@ -139,10 +144,8 @@ nav:
       - chapter 5 Heaps: school/fds/chap5.md
       - chapter 8: school/fds/chap8.md
       - chapter 9: school/fds/chap9.md
-    - 数字逻辑设计: school/digital.md
+    - 高级数据结构(ads): school/ads.md
     - verilog笔记: school/verilog.md
-    - 离散数学: school/dm.md
-    - 大一课程总结: school/zju.md
   - project:
     - Simple Tasker: project/simpletasker.md
     - dreamland(blog):
@@ -170,11 +173,13 @@ nav:
       - 哲学家的最后一课: life/reading/last_lesson.md
       - 错位的复仇: life/reading/revenge.md
       - 海边的卡夫卡: life/reading/karfka.md
+      - 德米安: life/reading/dma.md
       - 福柯系列:
         - 前言: life/reading/foucault/index.md
         - 如何阅读福柯: life/reading/foucault/how_to_read.md
     - 思想主题档案:
       - 绵延: life/thoughts/flow.md
+      - 命运: life/thoughts/fate.md
     - Music:
       - 乐理笔记: life/music/theory.md
       - 创作笔记: life/music/rhyme.md

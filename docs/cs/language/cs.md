@@ -219,7 +219,40 @@ public class Cat : Animal
 - 一个类只能继承一个父类
 - 写法见抽象类中的例子
 
-#### 可空引用类型
+### 接口: 一份契约，或能力清单
+
+接口不是类:
+```cs
+interface IDisposable
+{
+    void Dispose();
+}
+```
+它只写**要有什么方法**，不会写**怎么做**，怎么做交给实现接口的类:
+```cs
+class 房间 : IDisposable
+{
+    public void Dispose()
+    {
+        Console.WriteLine("关灯");
+    }
+}
+```
+
+就代表着房间这个类实现了`IDisposable`,换言之，房间**能做`IDisposable`要求的事**。这和父子类继承的写法差不多，因此为了区别我们会给接口命名多加一个`I`,且父类都会放第一个，且只能有一个父类，但我们可以有很多接口
+
+#### 接口在Blazor中的使用
+
+Blazor使用Razor文件，Razor同时包含HTML与C#，`@implements IDisposable`会被Razor编译器翻译成
+```cs
+public partial class Index : ComponentBase, IDisposable
+{
+    // ...
+}
+```
+即可实现接口的实现
+
+### 可空引用类型
 
 ```csharp
 string name = "小明";     // 非空，编译器保证
@@ -228,7 +261,7 @@ string? nickname = null; // 可能为 null，用的时候要检查
 
 减少空引用问题，减少`NullReferenceException`
 
-#### `using`与`namespace`
+### `using`与`namespace`
 
 `namespace`有点像文件夹，他们可以分类存放各种类，可以组织代码，避免命名冲突
 
@@ -269,6 +302,11 @@ C#10后可以在开头写一行加分号，整个文件就都属于这个命名�
 - 支持 with，方便做“复制并修改”；
 - 值相等，便于测试和比较。
 - 所以有的时候用record只是为了方便
+
+## 保持多个对象
+
+- 使用`List<T>`即保存多条指定类型的对象，`T`表示集合中每个元素的类型
+    - `List<T>` 的 `Count` 属性表示列表里的元素数量。
 
 ### 数据类型上的实践
 

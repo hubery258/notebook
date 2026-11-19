@@ -14,7 +14,6 @@ hello!这里是Hubery的**notebook**。我是浙江大学的大二计算机专�
 
 # Contact Me:
 [生活化blog](https://blog.ramenboy.cc)<br>
-[知乎](https://www.zhihu.com/people/hubery-62-3 "有时回答一些问题") <br>
 [github](https://github.com/hubery258)<br>
 [豆瓣](https://www.douban.com/people/258193304)<br>
 email: [hubery8065@hotmail.com](mailto:hubery8065@hotmail.com)
@@ -22,4 +21,4 @@ email: [hubery8065@hotmail.com](mailto:hubery8065@hotmail.com)
 公众号： “没有时间感的盆栽”
 
 !!! info inline end "上次更新"
-    2026/10/9
+    2026/11/19
